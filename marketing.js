@@ -50,5 +50,6 @@ function updateCookie () {
 
 window.addEventListener('load', function () {
   console.log('window loaded', document.cookie);
+  updateCookie()
   alert('Function #1');
 });
