@@ -48,7 +48,7 @@ function updateCookie () {
   }
 }
 
-window.onload = function () {
+window.addEventListener('load', function () {
   console.log('window loaded', document.cookie);
-  updateCookie();
-};
+  alert('Function #1');
+});
