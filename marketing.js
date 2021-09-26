@@ -20,7 +20,7 @@ function setUTMCookie ( utmParam, utmValue ) {
   console.log(utmParam, utmValue);
   const expDate = new Date( new Date().setFullYear( new Date().getFullYear() + 1 ));
   document.cookie = utmParam + '=' + utmValue + ';expires='
-    + expDate.toUTCString() + ';domain=' + process.env.AUTH_COOKIE_DOMAIN + ';secure=true;path=/';
+    + expDate.toUTCString() + ';domain=scratchpad.com' + ';secure=true;path=/';
   console.log(document.cookie)
 }
 
